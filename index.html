@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Project-78</title>
+  </head>
+    <body>
+      <center style="margin-top: 40px;"> 
+        
+        <h1>My Family Book</h1>
+        <div>
+        <img id="album" src="familyPicture.jpg" height="500" width="400">
+        <p id="name"></p>
+       <button type="button" onclick="nextslide()"> Next </button>
+    </div>
+    </center>
+    <script>
+        
+        var images = [
+  "dad.jpg",
+  "image.mom.jpg",
+  "rishi.jpg"
+];
+var family_names = [
+  "Nishant Sabharwal",
+ "Disha Dubey",
+  "Rishi Sabharwal",
+];
+
+var i=0;
+function nextslide(){
+  i++;
+  var numbers_of_family_members=2
+  if(i>numbers_of_family_members){
+    i=0;
+  }
+  var updated_image=images[i];
+  var updated_names=family_names[i];
+
+document.getElementById("name").innerHTML = updated_names;
+
+  document.getElementById("album").src = updated_image;
+}
+    </script>
+    </body>
+</html> 

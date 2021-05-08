@@ -1,0 +1,9 @@
+button {
+    height: 40;
+    width: 100;
+    background-color: lawngreen;
+    text-align: center;
+    font-size: medium;
+    font-family: cursive;
+    font-weight: bold;
+}
